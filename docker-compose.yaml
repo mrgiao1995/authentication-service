@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres
+  app:
+    container_name: service
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+    volumes:
+      - .:/go/src/app
+    env_file: 
+      - ./.env
+    ports:
+      - $PORT:$PORT
+    command: "gow -c -r=false -e=go,mod run cmd/server.go"
