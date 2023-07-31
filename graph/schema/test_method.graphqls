@@ -1,0 +1,6 @@
+directive @auth on FIELD_DEFINITION
+
+extend type Query {
+  testMethodAuth: String! @auth
+  testMethod: String!
+}

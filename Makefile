@@ -5,6 +5,9 @@ install:
 gqlgen:
 	go run github.com/99designs/gqlgen generate
 
-dev:
-	gow -c -e=go,mod run cmd/server.go
+token:
+	gow -c -e=go,mod run cmd/main.go token
+
+auth:
+	gow -c -e=go,mod run cmd/main.go auth	
 

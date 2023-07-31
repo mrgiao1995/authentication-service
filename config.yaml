@@ -1,0 +1,18 @@
+redisConfig:
+  host: $REDIS_HOST
+  port: $REDIS_PORT
+  password: $REDIS_PASSWORD
+authServerConfig:
+  host: $AUTH_HOST
+  port: $AUTH_PORT
+  jwtSecret: $JWT_SECRET
+tokenServerConfig:
+  host: $TOKEN_HOST
+  port: $TOKEN_PORT
+dbConfig:
+  host: $DB_HOST
+  port: $DB_PORT
+  userName: $DB_USERNAME
+  password: $DB_PASSWORD
+  name: $DB_NAME
+  schema: $DB_SCHEMA
